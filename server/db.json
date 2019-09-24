@@ -1,0 +1,46 @@
+{
+  "contacts": [
+    {
+      "name": "Alastair",
+      "phone": "32125",
+      "email": null,
+      "whatsapp": null,
+      "id": 1
+    },
+    {
+      "name": "Brenda",
+      "phone": "5413025302",
+      "email": null,
+      "whatsapp": null,
+      "id": 2
+    },
+    {
+      "name": "Alado",
+      "phone": null,
+      "email": null,
+      "whatsapp": null,
+      "id": 3
+    },
+    {
+      "name": "Bruna",
+      "phone": null,
+      "email": null,
+      "whatsapp": null,
+      "id": 4
+    },
+    {
+      "name": "Calvin",
+      "phone": null,
+      "email": null,
+      "whatsapp": null,
+      "id": 5
+    },
+    {
+      "name": "Alan",
+      "phone": null,
+      "email": null,
+      "whatsapp": null,
+      "id": 6
+    }
+  ]
+}

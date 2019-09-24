@@ -1,0 +1,22 @@
+.contact-home {
+  .empty-search{
+    text-align: center;
+    i{
+      font-size: 180px;
+    }
+  }
+  .actions {
+    .search_field {
+      padding-right: 0;
+    }
+    .buttons {
+      padding-left: 0;
+    }
+  }
+  .list-group-item:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #009688;
+    border-color: #009688;
+  }
+}

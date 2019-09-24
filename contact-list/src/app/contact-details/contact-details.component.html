@@ -1,0 +1,38 @@
+<header class="row">
+  <div class="col">
+    <a routerLink="/contacts"><i class="material-icons">keyboard_backspace</i></a>
+  </div>
+  <div class="col text-right">
+    <a routerLink="/contact-edit/{{contact.id}}" class="btn btn-primary"><i class="material-icons">edit</i></a>
+    <button (click)="removeContact(contact.id)" class="btn btn-danger"><i class="material-icons">delete</i></button>
+  </div>
+</header>
+<div class="row">
+  <div class="profile_image col-sm-4 text-center">
+    <img src="http://lorempixel.com/120/120/people/{{contact.id}}/" class="img-responsive rounded-circle" alt="">
+
+
+  </div>
+  <div class="info col">
+    <div class="row">
+      <div class="col-sm-4"><strong>Name</strong></div>
+      <div class="col-sm-8">{{contact.name}}</div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4"><strong>Phone</strong></div>
+      <div class="col-sm-8">{{contact.phone}}</div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4"><strong>E-mail</strong></div>
+      <div class="col-sm-8">{{contact.email}}</div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4"><strong>Whatsapp</strong></div>
+      <div class="col-sm-8">{{contact.whatsapp}}</div>
+    </div>
+    <hr>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<header>
+  <a routerLink="/contact-details/{{id}}"><i class="material-icons">keyboard_backspace</i></a>
+</header>
+<form [formGroup]="contactForm" (ngSubmit)="updateContact(contactForm.value)" class="form">
+  <ngx-spinner [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium"></ngx-spinner>
+  <div class="form-group">
+    <label for="" class="bmd-label-static">Name</label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label for="" class="bmd-label-static">Phone</label>
+    <input type="tel" class="form-control" formControlName="phone">
+  </div>
+  <div class="form-group">
+    <label for="" class="bmd-label-static">E-mail</label>
+    <input type="email" class="form-control" formControlName="email">
+  </div>
+  <div class="form-group">
+    <label for="" class="bmd-label-static">Whatsapp</label>
+    <input type="tel" class="form-control" formControlName="whatsapp">
+  </div>
+  <button type="submit" [disabled]="!contactForm.valid" class="btn btn-raised btn-primary">Save</button>
+</form>

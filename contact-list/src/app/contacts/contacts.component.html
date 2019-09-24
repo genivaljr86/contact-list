@@ -1,0 +1,32 @@
+<div class="contact-home">
+  <div class="row actions">
+    <div class="col-sm-9 search_field">
+      <div class="bmd-form-group bmd-collapse-inline pull-xs-right">
+        <span id="collapse-search" class="collapse">
+          <input class="form-control" [formControl]="queryField" type="text" id="search" placeholder="Search here...">
+        </span>
+      </div>
+    </div>
+    <div class="col text-right buttons">
+      <button type="button" class="btn btn-primary" for="search" data-toggle="collapse" data-target="#collapse-search"
+        aria-expanded="false" aria-controls="collapse-search">
+        <i class="material-icons">search</i>
+      </button>
+        <button routerLink="/contact-new" type="button" class="btn btn-primary">
+          <i class="material-icons">add</i>
+        </button>
+    </div>
+  </div>
+  <div class="list-group">
+    <ngx-spinner [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium"></ngx-spinner>
+    <a routerLink="/contact-details/{{contact.id}}" class="list-group-item list-group-item-action"
+      *ngFor="let contact of contacts">
+      <img src="http://lorempixel.com/50/50/people/{{contact.id}}/" class="rounded-circle" alt="" width="50" height="50">
+      {{contact.name}}
+    </a>
+    <div class="empty-search" *ngIf="contacts && contacts.length == 0">
+        <i class="material-icons text-muted">phone</i>
+        <p class="text-muted">Empty list :(</p>
+    </div>
+  </div>
+</div>
