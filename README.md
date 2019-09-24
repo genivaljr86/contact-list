@@ -7,7 +7,7 @@ email or whatsapp.
 
 ## 2 - Contact List Frontend
 Create a web app which explores the API built in the second assignment. You are expected
-to use Angular, TypeScript, Angular CLI and SCSS. The UI design is totally up to you.
+to use Angular, TypeScript, Angular CLI and SCSS.
 
 ### How to run
 `cd contact-list`
